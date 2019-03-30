@@ -1,0 +1,4 @@
+create table stu_details(nam varchar(40) not null, hostel varchar(20), reg_no varchar(10) not null PRIMARY KEY, email varchar(25) not null, con_no int(10) not null, addres varchar(40), years int(4), pass varchar(128), owner_ varchar(1) );
+create table cycle_detail(cycle_id int(4) not null PRIMARY KEY, reg_no varchar(10) not null, brand varchar(20), model varchar(20), color varchar(10), Suspension varchar(1), geared varchar(1), sale varchar(1), images varchar(100) );
+create table transfer_ownership(cycle_id int(4) not null, sell_id varchar(10) not null, buyer_id varchar(10) not null, req_date date, price int);
+create table allotment_app(nam varchar(40) not null, designation varchar(1), allotment_duration int, reg_no varchar(10) );
